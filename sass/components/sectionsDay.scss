@@ -1,0 +1,51 @@
+.dayContainer {
+  padding: 40px 40px 0px;
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  h1 {
+    text-align: left;
+    margin: 0 0 30px;
+    font-size: 25px;
+    font-family: "Roboto", "sans-serif";
+  }
+  .days {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .day1, .day2, .day3, .day4, .day5 {
+    flex: 0 1 calc(18% - 20px);
+    padding: 30px;
+    background-color: rgba(209, 209, 209, 0.1);
+    color: white;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 1.5s;
+    span {
+      color: rgb(219, 219, 219);
+    }
+    &:hover {
+      cursor: pointer;
+      border: 1px solid rgba(209, 209, 209,);
+      transform: scale(1.03);
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 3px;
+      background-color: rgba(255, 255, 255, 0.237); 
+      border-radius: 10px;
+    }
+  }
+}

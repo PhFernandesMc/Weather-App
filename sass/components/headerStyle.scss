@@ -1,0 +1,15 @@
+header {
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+  }
+  .headerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .headerContainer h1 {
+    margin: 0;
+    font-size: 32px;
+  }

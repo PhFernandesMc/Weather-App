@@ -1,0 +1,53 @@
+.dayContainer {
+  padding: 40px 40px 0px;
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.dayContainer h1 {
+  text-align: left;
+  margin: 0 0 30px;
+  font-size: 25px;
+  font-family: "Roboto", "sans-serif";
+}
+.dayContainer .days {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.dayContainer .day1, .dayContainer .day2, .dayContainer .day3, .dayContainer .day4, .dayContainer .day5 {
+  flex: 0 1 calc(18% - 20px);
+  padding: 30px;
+  background-color: rgba(209, 209, 209, 0.1);
+  color: white;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 1.5s;
+}
+.dayContainer .day1 span, .dayContainer .day2 span, .dayContainer .day3 span, .dayContainer .day4 span, .dayContainer .day5 span {
+  color: rgb(219, 219, 219);
+}
+.dayContainer .day1:hover, .dayContainer .day2:hover, .dayContainer .day3:hover, .dayContainer .day4:hover, .dayContainer .day5:hover {
+  cursor: pointer;
+  border: 1px solid rgb(209, 209, 209);
+  transform: scale(1.03);
+}
+.dayContainer .day1::after, .dayContainer .day2::after, .dayContainer .day3::after, .dayContainer .day4::after, .dayContainer .day5::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.237);
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=sectionsDay.css.map */

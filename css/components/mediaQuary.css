@@ -1,0 +1,61 @@
+@media only screen and (max-width: 1260px) {
+  .currentW__section-inputs h1 {
+    font-size: 0px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .currentW__section-inputs {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .currentW__section-info {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .dayContainer {
+    justify-content: center;
+    margin-top: 170px;
+  }
+  .dayContainer h1 {
+    text-align: center;
+    font-size: 20px;
+  }
+  .days {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .days .day1,
+  .days .day2,
+  .days .day3,
+  .days .day4,
+  .days .day5 {
+    font-size: 14px;
+    flex-direction: row;
+    padding: 0px 50px;
+    height: 10%;
+    width: 100%;
+  }
+  .days .day1 img,
+  .days .day2 img,
+  .days .day3 img,
+  .days .day4 img,
+  .days .day5 img {
+    height: 70px;
+  }
+  .days .day1 span,
+  .days .day2 span,
+  .days .day3 span,
+  .days .day4 span,
+  .days .day5 span {
+    margin-right: 10px;
+  }
+  .hourContainer h1 {
+    text-align: center;
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=mediaQuary.css.map */

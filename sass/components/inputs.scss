@@ -1,0 +1,110 @@
+.form {
+  position: relative;
+  width: $width-of-input;
+  height: $height-of-input;
+  display: flex;
+  align-items: center;
+  padding-inline: 0.8em;
+  border-radius: $border-radius;
+  transition: border-radius 0.5s ease;
+  background: $input-bg;
+  button {
+    border: none;
+    background: none;
+    color: $input-font-color;
+  }
+  .input {
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+    &:focus {
+      outline: none;
+    }
+    &:not(:placeholder-shown) ~ .reset {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    background: $border-color;
+    transform: scaleX(0);
+    transform-origin: center;
+    width: 100%;
+    height: $border-height;
+    left: 0;
+    bottom: 0;
+    border-radius: 1px;
+    transition: transform $timing;
+  }
+  &:focus-within {
+    border-radius: $after-border-radius;
+  }
+  &:focus-within:before {
+    transform: scale(1);
+  }
+  .reset {
+    border: none;
+    background: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+  svg {
+    width: 17px;
+    margin-top: 3px;
+  }
+}
+.input__select {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  .select {
+    border-radius: $border-radius;
+    border: none;
+    appearance: none;
+    padding: 10px 30px 10px 15px;
+    width: 100%;
+    color: $input-font-color;
+    background-color: $input-bg;
+    transition: border-radius 0.5s ease;
+    &:focus-within {
+      border-radius: $after-border-radius;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  .icon-container {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #15397c;
+    color: white;
+  }
+}
+.icon {
+  button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    &:hover {
+      cursor: pointer;
+    }
+    margin-left: 22px;
+  }
+  .icon__button {
+    color: rgb(255, 225, 0);
+  }
+}
