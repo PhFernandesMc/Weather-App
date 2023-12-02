@@ -22,8 +22,8 @@ body {
 }
 
 .afternoon {
-  background: rgb(255, 193, 45);
-  background: linear-gradient(0deg, rgb(255, 193, 45) 0%, rgb(255, 111, 0) 100%);
+  background: rgb(104,112,255);
+  background: linear-gradient(0deg, rgba(104,112,255,1) 0%, rgba(90,0,255,1) 100%);
 }
 
 .evening {

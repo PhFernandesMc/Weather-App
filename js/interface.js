@@ -126,7 +126,7 @@ const changeBackground = (hour) => {
     case hour < 13:
       dayTime = "morning";
       break;
-    case hour < 18:
+    case hour < 19:
       dayTime = "afternoon";
       break;
     default:
